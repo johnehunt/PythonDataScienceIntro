@@ -27,3 +27,9 @@ print(new_df.to_string())
 # Can also drop rows based on presence of missing values in that row
 new_df = df.dropna(subset=['notes'])
 print(new_df.to_string())
+
+print('-' * 25)
+# Drop unused columns
+print(df.to_string())
+df.drop('zone', axis='columns', inplace=True)
+print(df.to_string())

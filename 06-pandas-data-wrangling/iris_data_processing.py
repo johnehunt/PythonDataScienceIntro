@@ -30,3 +30,4 @@ print(iris_df.isna().sum().sum())
 
 # Across a row
 print(iris_df.loc[[1]].isna().sum().sum())
+
