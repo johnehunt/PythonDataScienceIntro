@@ -9,4 +9,16 @@ print(df3.to_string())
 
 print('-' * 25)
 
+df3 = pd.merge(df1, df2, how='left')
+print(df3.to_string())
+
+print('-' * 25)
+
+df3 = pd.merge(df1, df2, how='right')
+print(df3.to_string())
+
+print('-' * 25)
+
+df3 = pd.merge(df1, df2, how='outer')
+print(df3.to_string())
 
