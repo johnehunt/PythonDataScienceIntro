@@ -1,0 +1,6 @@
+id,date,time,location,zone,name,processed,notes,code
+1,2021-06-01,10:00:00,"10 High Street",,"Steve Smith",True,,42
+2,2021-06-02,11:00:00,"4 Back Lane",,"Bill Smith",False,'Needed info',42
+3,2021-06-02,11:15:00,"12 Main Street",,"John Jones",True,,42
+4,2021-06-03,12:30:00,"15 Market Square",,"Gryff Davies",False,,42
+5,2021-06-04,14:00:00,"32 Church Close",,"Bob Morgan",True,,42
