@@ -19,8 +19,6 @@ city_df['name'] = city_df.name.astype('string')
 print(city_df['name'].dtype)
 print('-' * 10)
 
-
-
 print(city_df.head(4))
 print('-' * 10)
 print(city_df.tail(4))
@@ -51,17 +49,7 @@ print(df)
 sorted_frame = df.sort_values(by='population')
 print(sorted_frame)
 
-print('-' * 10)
-city_df = pd.DataFrame(cities)
-print(city_df.sum())
-
-print('-' * 10)
-print(city_df['population'].sum())
-
-print('-' * 10)
-print(city_df['population'].cumsum())
-
-# SLicing
+# Slicing
 
 cities = {
         'name': ['London', 'Berlin', 'Madrid', 'Rome', 'Paris', 'Bristol'],
@@ -92,23 +80,6 @@ print(f"df.mean(axis='columns'): {df.mean(axis='columns')}")
 print(f"df.idxmax(): {df.idxmax()}")
 
 
-cities = {
-        'name': ['London', 'Berlin', 'Madrid', 'Rome', 'Paris', 'Bristol'],
-        'population': [8615246, 3562166, 3165235, 2874038, 2273305, 205544],
-        'country': ['England', 'Germany', 'Spain', 'Italy', 'France', 'England']}
-
-print('-' * 10)
-city_df = pd.DataFrame(cities)
-grouped_df = city_df.groupby('country')
-print(grouped_df.get_group('England'))
-print('-' * 10)
-print(grouped_df.get_group('Spain'))
-print('-' * 10)
-print(grouped_df.sum())
-print('-' * 10)
-print(grouped_df.get_group('England').sum())
-print('-' * 10)
-print(grouped_df.get_group('England').agg([np.sum, np.mean, np.std]))
 
 print('-' * 10)
 printable_frame = city_df.to_string()
