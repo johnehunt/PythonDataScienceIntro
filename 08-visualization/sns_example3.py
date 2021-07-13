@@ -1,0 +1,15 @@
+import seaborn as sns
+import matplotlib.pyplot as pyplot
+
+sns.set()
+
+# Tips is in-built dataset
+tips = sns.load_dataset("tips")
+
+sns.catplot(x="day",
+            y="total_bill",
+            hue="smoker",
+            kind="violin",
+            data=tips)
+
+pyplot.show()
