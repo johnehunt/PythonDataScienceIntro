@@ -21,3 +21,4 @@ bin-release/
 /.idea/modules.xml
 /.idea/PythonDataScienceIntro.iml
 /.idea/vcs.xml
+/.idea/csv-plugin.xml
