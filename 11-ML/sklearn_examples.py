@@ -28,5 +28,9 @@ new_data = [[5.1, 3.5, 1.4, 0.2],  # 0
             [7.7, 3., 6.1, 2.3],  # 2
             [6.1, 3., 4.6, 1.4]  # 1
             ]
+results = iris_classifier.predict(new_data)
 
-print(iris_classifier.predict(new_data))
+for i in range(len(new_data)):
+    print(f'for {new_data[i]} -> {results[i]}')
+
+
